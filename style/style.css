@@ -10,6 +10,7 @@
 }
 /* Shared Style Here */
 .section-title {
+    padding-bottom:20px;
   color: #131313;
   font-size: 2.75rem;
   font-weight: 700;
@@ -198,6 +199,14 @@ nav {
 }
 .sponspors-img {
   width: 180px;
+}
+/* This is Footer Related Style Section Here */
+footer{
+    max-width:1440px;
+    margin:0 auto;
+    background-color: #FFF4E7;
+    text-align: center;
+    padding:40px;
 }
 /*This is responsive Media Queries Here */
 /* Mobile device */
