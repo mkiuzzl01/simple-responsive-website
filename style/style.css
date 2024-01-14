@@ -70,16 +70,13 @@ nav{
     font-weight:700;
     margin-top:100px;
 }
-/* .banner-description{
-    margin-bottom:32px;
-} */
 
 .banner-img{
     width:100%;
     margin-top:50px;
 }
 /* This is Feature Section Here */
-.Features{
+.Teams{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -95,10 +92,10 @@ nav{
     padding-left:70px;
 }
 
-.feature-title{
+.Teams-title{
     font-size:2.8rem;
 }
-.feature-title .Title-light-gray{
+.Teams-title .Title-light-gray{
 color: #727272;
 font-weight: 500; 
 }
@@ -107,36 +104,84 @@ color: #131313;
 font-weight: 700; 
 }
 .feature-title .Title-Yellow{
-color: #FF900E;
-font-weight: 700; 
+ color: #FF900E;
+ font-weight: 700; 
 }
-.feature-description{}
-
+.Teams-description{}
+/* This is Features Related Style Section Here */
+.Features{}
+/* This is Facts Related Style Section Here */
+.Facts{
+    margin-top:130;
+}
+.Facts-content{}
+.card-container{
+    padding-top:100px;
+    display: flex;
+    justify-content: space-around;
+}
+.card-container .card{
+    padding:30px;
+    text-align: center;
+    border-radius:8px;
+    border: 1px solid #FF900E;
+}
+.card-container .card-stats{
+    color: #424242;
+    font-size:2.8rem;
+    font-weight: 600;
+}
+.card-container .card-description{
+    font-weight: 600;
+}
+/* This is Sponspors Related Style Section Here */
+.Sponspors{
+    margin-top:130px;
+}
+.Sponspors-content{
+    text-align: center;
+}
+.Sponspors-images{
+    padding-top:50px;
+    padding-bottom:130px;
+    display: flex;
+    justify-content: space-evenly;
+}
 /*This is responsive Media Queries Here */
 /* Mobile device */
 @media screen and (max-width:576px){
     header,
-    .Teams-content{
+    .Teams-content,
+    .Facts-content{
         padding:20px;
     }
-    nav{
+    nav,
+    .Facts,
+    .card-container,
+    .Sponspors,
+    .Sponspors-images{
         flex-direction: column;
     }
-    .Features{
+    .Teams{
         flex-direction: column-reverse;
     }
     .Teams-image-Container{
         grid-template-columns:repeat(1,1fr);
+    }
+    .card-container{
+        gap:20px;
     }
 }
 
 /* Tablet or Medium device */
 @media screen and (min-width:576px) and (Max-width:960px){
     header,
-    .Teams-content{
+    .Teams-content,
+    .Facts-content{
         padding:50px;
     }
-    nav,.Features{
+    nav,.Teams
+    {
         flex-direction: column;
     }
 
