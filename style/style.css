@@ -21,6 +21,7 @@
     line-height: 26px; 
 }
 .btn-primary{
+    margin-top:32px;
     padding:20px 24px;
     background-color:#FF900E;
     color: white;
@@ -34,6 +35,11 @@
 header{
     background-color:#FF900E1A;
     padding:50px 140px;
+}
+/* This is main section Related Style */
+main{
+    max-width:1440px;
+    margin:70px auto;
 }
 /* This is Nav Related Style Here */
 nav{
@@ -64,32 +70,73 @@ nav{
     font-weight:700;
     margin-top:100px;
 }
-.banner-description{
+/* .banner-description{
     margin-bottom:32px;
-}
+} */
 
 .banner-img{
     width:100%;
     margin-top:50px;
 }
+/* This is Feature Section Here */
+.Features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Teams-image-Container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1.5rem;
+}
+
+.Teams-content{
+    padding-right:70px;
+    padding-left:70px;
+}
+
+.feature-title{
+    font-size:2.8rem;
+}
+.feature-title .Title-light-gray{
+color: #727272;
+font-weight: 500; 
+}
+.feature-title .Title-Black{
+color: #131313;
+font-weight: 700; 
+}
+.feature-title .Title-Yellow{
+color: #FF900E;
+font-weight: 700; 
+}
+.feature-description{}
 
 /*This is responsive Media Queries Here */
 /* Mobile device */
 @media screen and (max-width:576px){
-    header{
+    header,
+    .Teams-content{
         padding:20px;
     }
     nav{
         flex-direction: column;
     }
+    .Features{
+        flex-direction: column-reverse;
+    }
+    .Teams-image-Container{
+        grid-template-columns:repeat(1,1fr);
+    }
 }
 
 /* Tablet or Medium device */
 @media screen and (min-width:576px) and (Max-width:960px){
-    header{
+    header,
+    .Teams-content{
         padding:50px;
     }
-    nav{
+    nav,.Features{
         flex-direction: column;
     }
 
