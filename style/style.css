@@ -35,6 +35,7 @@ header{
     background-color:#FF900E1A;
     padding:50px 140px;
 }
+/* This is Nav Related Style Here */
 nav{
     display: flex;
     justify-content:space-between;
@@ -46,19 +47,50 @@ nav{
 .nav-link li{
     list-style:none;
     margin-left:20px;
-    color: #424242;
     font-size:1rem; 
 }
-.banner-title{
-    color: #131313;
-    font-size:4rem;
-    font-weight: 700;
+.nav-link a{
+    color: #424242;
 }
+/* this is banner-style */
 .banner-content{
     text-align: center;
     max-width:850px;
     margin:0 auto;
 }
+.banner-title{
+    color: #131313;
+    font-size:4rem;
+    font-weight:700;
+    margin-top:100px;
+}
+.banner-description{
+    margin-bottom:32px;
+}
+
 .banner-img{
     width:100%;
+    margin-top:50px;
+}
+
+/*This is responsive Media Queries Here */
+/* Mobile device */
+@media screen and (max-width:576px){
+    header{
+        padding:20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* Tablet or Medium device */
+@media screen and (min-width:576px) and (Max-width:960px){
+    header{
+        padding:50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+
 }
